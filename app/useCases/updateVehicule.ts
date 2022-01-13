@@ -1,7 +1,7 @@
 import { Vehicule } from "../domain/entities/Vehicule";
-import { IVehiculeInputPort } from "./Interfaces/vehicule/IVehiculeInputPort";
-import { IVehiculeOutputPort } from "./Interfaces/vehicule/IVehiculeOutputPort";
-import { IVehiculeRepository } from "./Interfaces/vehicule/IVehiculeRepository";
+import { IVehiculeInputPort } from "../interfaces/vehicule/IVehiculeInputPort";
+import { IVehiculeOutputPort } from "../interfaces/vehicule/IVehiculeOutputPort";
+import { IVehiculeRepository } from "../interfaces/vehicule/IVehiculeRepository";
 
 export class UpdateVehicule implements IVehiculeInputPort {
   private _repository: IVehiculeRepository;

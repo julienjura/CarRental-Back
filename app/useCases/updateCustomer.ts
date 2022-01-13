@@ -1,7 +1,7 @@
 import { Customer } from "../domain/entities/Customer";
-import { ICustomerInputPort } from "./Interfaces/customer/ICustomerInputPort";
-import { ICustomerOutputPort } from "./Interfaces/customer/ICustomerOutputPort";
-import { ICustomerRepository } from "./Interfaces/customer/ICustomerRepository";
+import { ICustomerInputPort } from "../interfaces/customer/ICustomerInputPort";
+import { ICustomerOutputPort } from "../interfaces/customer/ICustomerOutputPort";
+import { ICustomerRepository } from "../interfaces/customer/ICustomerRepository";
 
 export class UpdateCustomer implements ICustomerInputPort {
   private _repository: ICustomerRepository;

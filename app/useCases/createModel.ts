@@ -1,7 +1,7 @@
 import { Model } from "../domain/entities/Model";
-import { IModelInputPort } from "./Interfaces/model/IModelInputPort";
-import { IModelOutputPort } from "./Interfaces/model/IModelOutputPort";
-import { IModelRepository } from "./Interfaces/model/IModelRepository";
+import { IModelInputPort } from "../interfaces/model/IModelInputPort";
+import { IModelOutputPort } from "../interfaces/model/IModelOutputPort";
+import { IModelRepository } from "../interfaces/model/IModelRepository";
 
 export class CreateModel implements IModelInputPort {
   private _repository: IModelRepository;

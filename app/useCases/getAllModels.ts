@@ -1,6 +1,6 @@
-import { IModelInputPort } from "./Interfaces/model/IModelInputPort";
-import { IModelsOutputPort } from "./Interfaces/model/IModelOutputPort";
-import { IModelRepository } from "./Interfaces/model/IModelRepository";
+import { IModelInputPort } from "../interfaces/model/IModelInputPort";
+import { IModelsOutputPort } from "../interfaces/model/IModelOutputPort";
+import { IModelRepository } from "../interfaces/model/IModelRepository";
 
 export class GetAllModels implements IModelInputPort {
   private _repository: IModelRepository;
