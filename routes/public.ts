@@ -1,16 +1,17 @@
+import path from 'path';
 import express, { response } from 'express';
-import { request } from 'http';
+import rootDir from '../utils/path';
+import { products } from './admin';
 
  const publicAppRouter = express .Router();
  
  publicAppRouter.get('/', (request, response, next) => {
-    response.send(
-        '<h1>Hello from NodeJS server</h1>'
-    );
+     console.log(products);
+    response.sendFile(path.join(rootDir, 'views', 'shop.html'));
   });
 
   publicAppRouter.use((request, response, next) => {
-    response.status(404).send('<h1>Page introuvable</h1>')
+    response.sendFile(path.join(rootDir, 'views', '404.html'));
   });
 
   export default publicAppRouter;

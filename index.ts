@@ -1,4 +1,5 @@
-const http = require('http');
+import http  from 'http';
+import path  from 'path';
 import express from 'express';
 import bodyParser from 'body-parser';
 
@@ -10,6 +11,7 @@ const app = express();
 
 // Middlewares
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));    // statically served files
 
 // Routes
 app.use('/admin', adminRoutes);

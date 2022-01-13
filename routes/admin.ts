@@ -1,17 +1,23 @@
 import express from 'express';
+import path from 'path';
+import rootDir from '../utils/path';
+
+ export interface product {
+    title: string;
+ };
+
+ export const products:product[] = [];
 
  const adminAppRouter = express.Router();
  
  // /admin/add-lesson (GET)
- adminAppRouter.get ('/add-lesson', (request, response, next) => {
-    response.send(
-        '<form action="/admin/lesson" method="POST"><input type="text" name="title"><button type="submit">Add lesson</button></form>'
-    );
+ adminAppRouter.get ('/add-product', (request, response, next) => {
+    response.sendFile(path.join(rootDir, 'views', 'add-product.html'));
   });
 
   // /admin/lesson (POST)
-  adminAppRouter.post('/lesson', (request, response, next) => {
-    console.log(request.body);
+  adminAppRouter.post('/add-product', (request, response, next) => {
+    products.push({title: request.body.title});
     response.redirect('/');
   });
 
