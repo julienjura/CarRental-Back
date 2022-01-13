@@ -10,7 +10,7 @@ export const startTerminal = async () => {
   // Mockup
   await modelTerminalController.createModel("A3", "Audi");
   await modelTerminalController.createModel("Juke", "Nissan");
-  await modelTerminalController.createModel("308", "Peugeot");
+  await modelTerminalController.createModel("DS3", "Citroen");
   // ------
   while (userResponse !== "Q") {
     console.log("\x1b[0m", "Main Menu");
