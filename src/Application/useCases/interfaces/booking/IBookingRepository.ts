@@ -1,4 +1,4 @@
-import { Booking } from "../../domain/Aggregates/Booking";
+import { Booking } from "../../../../Domain/Aggregates/Booking";
 
 export interface IBookingRepository {
   create: (booking: Booking) => Promise<void>;

@@ -1,7 +1,7 @@
-import { Booking } from "../domain/Aggregates/Booking";
-import { IBookingInputPort } from "../interfaces/booking/IBookingInputPort";
-import { IBookingOutputPort } from "../interfaces/booking/IBookingOutputPort";
-import { IBookingRepository } from "../interfaces/booking/IBookingRepository";
+import { Booking } from "../../Domain/Aggregates/Booking";
+import { IBookingInputPort } from "./interfaces/booking/IBookingInputPort";
+import { IBookingOutputPort } from "./interfaces/booking/IBookingOutputPort";
+import { IBookingRepository } from "./interfaces/booking/IBookingRepository";
 
 export class CheckVehiculeAvailability implements IBookingInputPort {
   private _bookingsRepository: IBookingRepository;

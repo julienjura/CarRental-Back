@@ -1,4 +1,4 @@
-import { Vehicule } from "../../domain/entities/Vehicule";
+import { Vehicule } from "../../../../Domain/entities/Vehicule";
 
 export interface IVehiculeRepository {
   create: (vehicule: Vehicule) => Promise<void>;

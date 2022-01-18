@@ -1,4 +1,4 @@
-import { Model } from "../app/domain/entities/Model";
+import { Model } from "../Domain/entities/Model";
 
 describe("Domain Model tests", () => {
   it("should get a correct model", () => {

@@ -1,6 +1,6 @@
 import readLineSync from "readline-sync";
-import { ModelTerminalController } from "./app/controllers/modelControllers/ModelTerminalController";
-import { ModelRepository } from "./app/repositories/model/modelRepository";
+import { ModelTerminalController } from "./Application/controllers/modelControllers/ModelTerminalController";
+import { ModelRepository } from "./Application/repositories/model/modelRepository";
 
 const modelRepository = new ModelRepository();
 const modelTerminalController = new ModelTerminalController(modelRepository);

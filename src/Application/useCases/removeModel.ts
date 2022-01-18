@@ -1,7 +1,7 @@
-import { Model } from "../domain/entities/Model";
-import { IModelInputPort } from "../interfaces/model/IModelInputPort";
-import IModelOutputPort from "../interfaces/model/IModelOutputPort";
-import { IModelRepository } from "../interfaces/model/IModelRepository";
+import { Model } from "../../Domain/entities/Model";
+import { IModelInputPort } from "./interfaces/model/IModelInputPort";
+import IModelOutputPort from "./interfaces/model/IModelOutputPort";
+import { IModelRepository } from "./interfaces/model/IModelRepository";
 
 export class RemoveModel implements IModelInputPort {
   private _repository: IModelRepository;
