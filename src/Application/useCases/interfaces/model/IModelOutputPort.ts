@@ -1,4 +1,4 @@
-import { Model } from "../../domain/entities/Model";
+import { Model } from "../../../../Domain/entities/Model";
 
 export interface IModelOutputPort {
   present: (model: Model) => void;

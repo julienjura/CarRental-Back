@@ -1,5 +1,5 @@
-import { IModelsOutputPort } from "../../interfaces/model/IModelOutputPort";
-import { Model } from "../../domain/entities/Model";
+import { IModelsOutputPort } from "../../../Application/useCases/interfaces/model/IModelOutputPort";
+import { Model } from "../../../Domain/entities/Model";
 
 export class ModelsJSONPresenter implements IModelsOutputPort {
   private _json: { name: string; brand: string }[] = [];

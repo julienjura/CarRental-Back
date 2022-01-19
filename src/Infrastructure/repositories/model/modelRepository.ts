@@ -1,5 +1,5 @@
-import { IModelRepository } from "../../interfaces/model/IModelRepository";
-import { Model } from "../../domain/entities/Model";
+import { IModelRepository } from "../../../Application/useCases/interfaces/model/IModelRepository";
+import { Model } from "../../../Domain/entities/Model";
 
 interface IModelDTO {
   name: string;

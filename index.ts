@@ -5,6 +5,8 @@ import bodyParser from 'body-parser';
 import csrf from 'csurf';
 import multer from 'multer';
 
+import { carRentalRouter } from './src/Interfaces/routes/carRentalRouter';
+
 // App
 const app = express();
 
@@ -16,8 +18,7 @@ app.use(express.static(path.join(__dirname, 'Infrastructure', 'webserver', 'publ
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Routes
-// app.use('/admin', adminRoutes);
-// app.use(publicRoutes);
+app.use(carRentalRouter);
 
 // Server
 const server = http.createServer(app);
