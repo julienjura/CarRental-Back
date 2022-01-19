@@ -11,6 +11,7 @@ export class GetAllModels implements IModelInputPort {
   }
   handle = async () => {
     const response = await this._repository.getAll();
+    console.log(JSON.stringify(response));
     this._presenter.present(response);
   };
 }

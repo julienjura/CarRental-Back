@@ -12,6 +12,9 @@ const app = express();
 
 const csrfProtection = csrf();
 
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 // Middlewares
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'Infrastructure', 'webserver', 'public')));    // statically served files
