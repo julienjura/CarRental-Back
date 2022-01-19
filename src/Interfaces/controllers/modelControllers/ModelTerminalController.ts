@@ -1,8 +1,8 @@
-import { CreateModel } from "../../useCases/createModel";
-import { GetAllModels } from "../../useCases/getAllModels";
-import { RemoveModel } from "../../useCases/removeModel";
-import { ModelRepository } from "../../repositories/model/modelRepository";
-import { Model } from "../../domain/entities/Model";
+import { CreateModel } from "../../../Application/useCases/createModel";
+import { GetAllModels } from "../../../Application/useCases/getAllModels";
+import { RemoveModel } from "../../../Application/useCases/removeModel";
+import { ModelRepository } from "../../../Infrastructure/repositories/model/modelRepository";
+import { Model } from "../../../Domain/entities/Model";
 
 import { ModelJSONPresenter } from "../../presenters/modelPresenters/ModelJSONPresenter";
 import { ModelsJSONPresenter } from "../../presenters/modelPresenters/ModelsJSONPresenter";
