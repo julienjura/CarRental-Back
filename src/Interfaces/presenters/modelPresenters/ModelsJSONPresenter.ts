@@ -10,6 +10,7 @@ export class ModelsJSONPresenter implements IModelsOutputPort {
     this._json = models.map((m) => ({
       name: m.name.value,
       brand: m.brand.value,
+      picture: m.picture.value,
     }));
   };
 }

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DDD based Car Rental Prototype</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1>Awesome DDD Car Rental System</h1>
+        <% if(models.length > 0) { %>
+            <h2>Available cars :</h2>
+            <div class="rental-main-container">
+                <% for(let model of models) { %>
+                <div class="rental-card-container">
+                    <div class="rental-vcontainer rental-container-centered">
+                        <img class="rental-card-image" src="<%= model.picture %>"/>
+                        <div class="rental-card-title">
+                            <%= model.brand %> <%= model.name %>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        <% } else { %>
+        <h2>No available cars ! Sorry about that ...</h2>
+        <% } %>
+    </body>
+</html>

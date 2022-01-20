@@ -13,11 +13,11 @@ const app = express();
 const csrfProtection = csrf();
 
 app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('views', path.join(__dirname, '/src/Infrastructure/webserver/views'));
 
 // Middlewares
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, 'Infrastructure', 'webserver', 'public')));    // statically served files
+app.use(express.static(path.join(__dirname, 'src', 'Infrastructure', 'webserver', 'public')));    // statically served files
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Routes

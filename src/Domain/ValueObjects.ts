@@ -71,7 +71,7 @@ export class Siret implements ValueOrEntityObject<string> {
 export class PictureURL implements ValueOrEntityObject<string> {
   private _value: string;
   constructor(pictureURL?: string) {
-    this._value = pictureURL || "../assets/no-photo.jpg";
+    this._value = pictureURL || "not-found.jpeg";
   }
   get value() {
     return this._value;

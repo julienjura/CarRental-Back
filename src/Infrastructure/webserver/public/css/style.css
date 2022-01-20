@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.rental-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.rental-card-container {
+    border-style:solid;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: darkgray;
+
+    padding: 20px;
+
+    width: 400px;
+    height: 300px;
+}
+
+.rental-hcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.rental-vcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.rental-container-centered {
+    align-items: center;
+}
+
+.rental-card-title {
+
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rental-card-image {
+    width: 350px;
+    height: 250px;
+
+    border-radius: 6px;
+
+    object-fit: contain;
+}

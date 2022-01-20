@@ -38,9 +38,9 @@ export class ModelController {
         response.render('home', { models: this._modelsPresenter.value});
     }
 
-    createModel = async (data: { name: string; brand: string; }): Promise<ControllerResponse> => {
+    createModel = async (data: { name: string; brand: string; pictureURL: string }): Promise<ControllerResponse> => {
         try {
-            const newModel = new Model(data.name, data.brand);
+            const newModel = new Model(data.name, data.brand, data.pictureURL);
             await this._createModel.handle(newModel);
             return { success: true, message: "new model added." };
         } catch (e) {
